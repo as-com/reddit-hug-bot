@@ -33,7 +33,7 @@ function connect() {
             },
             "exclude": {
                 author: ["fast-parenthesis-bot", "hug-bot", "Ryugi"],
-                subreddit: SUB_BLACKLIST
+                // subreddit: SUB_BLACKLIST
             }
         }));
         console.log("Sent subscription");
@@ -68,7 +68,7 @@ I'm a bot, and I like to give hugs. [source](https://github.com/as-com/reddit-hu
 }
 
 function processThing(model, body, id, fullname, subreddit) {
-    console.log("Processing " + fullname);
+    console.log("Processing https://www.reddit.com" + model.permalink);
 
     if (SUB_BLACKLIST.has(subreddit.toLowerCase())) {
         console.log("Subreddit blacklisted");
