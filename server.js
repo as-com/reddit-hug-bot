@@ -33,7 +33,7 @@ function connect() {
 				// subreddit: ["test"]
 			},
 			"exclude": {
-				author: ["fast-parenthesis-bot", "hug-bot", "Ryugi"],
+				author: ["hug-bot", "Ryugi", "Chigzy"],
 				// subreddit: SUB_BLACKLIST
 			}
 		}));
