@@ -83,7 +83,7 @@ function processThing(model, body, id, fullname, subreddit) {
 		return;
 	}
 
-	if (!/^ugh.{0,20}/.test(model.body)) {
+	if (!/^ugh.{0,20}$/.test(model.body)) {
 		console.log("Comment too long.");
 		return;
 	}
